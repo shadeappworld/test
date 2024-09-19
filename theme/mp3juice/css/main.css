@@ -1,0 +1,474 @@
+@import "https://fonts.googleapis.com/css?family=Fjalla+One";
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+@font-face {
+    font-family: open sans;
+    font-style: normal;
+    font-weight: 400;
+    src: url(OpenSans-Regular.ttf)
+}
+@font-face {
+    font-family: open sans;
+    font-style: normal;
+    font-weight: 600;
+    src: url(OpenSans-SemiBold.ttf)
+}
+body {
+    color: #fff;
+    background-color: #03a9f4;
+    font-size: 13px;
+    font-family: open sans, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 0
+}
+
+ul{
+    margin:0;padding:20px;
+}
+
+#nav {
+    max-width: 600px;
+    border-bottom: 1px #ccc solid;
+    margin: 0 auto 30px;
+    padding: 5px 0
+}
+
+#nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 5%
+}
+
+#nav a:last-child {
+    margin-right: 0
+}
+
+#content {
+    max-width: 600px;
+    margin: 0 auto
+}
+
+#content #logo {
+    border: none;
+    margin: 0 auto 60px
+}
+
+form {
+    background-color: #fff;
+    width: 100%;
+    height: 42px;
+    border-radius: 2px;
+    margin: 0 auto 5px;
+    position: relative
+}
+
+form #query {
+    color: #2c2c2c;
+    background-color: transparent;
+    font-size: 14px;
+    font-family: open sans, sans-serif;
+    float: left;
+    width: 89.66666666666667%;
+    height: 42px;
+    border: none;
+    padding: 0 1%
+}
+
+form #button {
+    color: #2c2c2c;
+    background-color: transparent;
+    font-size: 21px;
+    width: 8.333333333333333%;
+    height: 42px;
+    border: none;
+    padding: 0;
+    cursor: pointer
+}
+
+form #suggestions {
+    background-color: #fff;
+    text-align: left;
+    width: 100%;
+    border-top: 1px #f0f0f0 solid;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    display: none;
+    position: absolute;
+    top: 40px
+}
+
+form #suggestions span {
+    color: #2c2c2c;
+    line-height: 23px;
+    padding-left: 1%;
+    display: block;
+    cursor: pointer
+}
+
+form #suggestions span:last-child {
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px
+}
+
+#form_text {
+    font-size: 11px
+}
+
+#form_text a:link,
+#form_text a:visited {
+    color: #fff
+}
+
+#form_text a:hover,
+#form_text a:active {
+    text-decoration: none
+}
+
+#control_sources {
+    color: #fff;
+    background-color: #0dc420;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 2px;
+    margin-top: 15px;
+    padding: 5px 1.666666666666667%;
+    display: inline-block
+}
+
+#sources {
+    width: 38.33333333333333%;
+    margin: 15px auto 0;
+    display: none
+}
+
+#sources #left {
+    float: left;
+    width: 43.47826086956522%;
+    margin-right: 13.04347826086957%
+}
+
+#sources #right {
+    float: left;
+    width: 43.47826086956522%
+}
+
+#sources a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    padding: 5px 0;
+    display: block
+}
+
+#sources .enabled {
+    background-color: #2c2c2c
+}
+
+#sources .disabled {
+    background-color: #0dc420
+}
+
+#load {
+    font-size: 50px;
+    width: 100%;
+    margin: 60px auto;
+    display: none
+}
+
+#text {
+    text-align: justify;
+    width: 100%;
+    margin-top: 60px
+}
+
+#text h1 {
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 5px
+}
+
+#text p {
+    width: 100%;
+    line-height: 23px
+}
+
+#text p:first-of-type {
+    margin-top: 0
+}
+
+#text p:last-of-type {
+    margin-bottom: 0
+}
+
+#text a:link,
+#text a:visited {
+    color: #fff
+}
+
+#text a:hover,
+#text a:active {
+    text-decoration: none
+}
+
+#footer {
+    max-width: 600px;
+    border-top: 1px #ccc solid;
+    margin: 30px auto 0;
+    padding: 5px 0
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 5%
+}
+
+#footer a:last-child {
+    margin-right: 0
+}
+
+.clear {
+    clear: both
+}
+
+#error {
+    text-align: center;
+    width: 100%;
+    margin: 60px auto
+}
+
+#error a {
+    color: #fff
+}
+
+#results {
+    text-align: center;
+    width: 100%;
+    margin: 60px auto
+}
+
+#results p {
+    line-height: 23px;
+    margin: 0
+}
+
+#results p:last-of-type {
+    margin-bottom: 15px !important
+}
+
+#results p a {
+    color: #fff
+}
+
+h3{
+    font-size: 16px;
+}
+
+h2{
+    font-size: 20px;
+    text-align: left;
+}
+
+.result {
+    background-color: #5290d7;
+    text-align: center;
+    width: 96.66666666666667%;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    padding: 1.666666666666667%
+}
+
+.result .name {
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden
+}
+
+.result .properties {
+    font-size: 11px;
+    width: 100%;
+    margin: 0 auto 15px
+}
+
+.result .options a {
+    color: #2c2c2c;
+    background-color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 2px;
+    margin-right: .8333333333333333%;
+    padding: 5px 1.666666666666667%;
+    display: inline-block
+}
+
+.result .options a:last-child {
+    margin-right: 0
+}
+
+.file {
+    font-size: 15px;
+    font-family: fjalla one, sans-serif;
+    color: #282828;
+    background-color: #fff;
+    text-align: center;
+    width: 96.66666666666667%;
+    border-radius: 2px;
+    padding: 1.666666666666667%
+}
+
+.file .name {
+    font-size: 16px;
+    font-family: fjalla one, sans-serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden
+}
+
+.file .progress {
+    width: 100%;
+    margin: 15px auto
+}
+
+.file .progress a {
+    color: #2c2c2c
+}
+
+.file .options {
+    width: 100%;
+    display: none
+}
+
+.file .options a {
+    color: #fff;
+    background-color: #0dc420;
+    font-size: 14px;
+    font-family: fjalla one, sans-serif;
+    border-radius: 3px;
+    text-decoration: none;
+    border-radius: 2px;
+    margin-right: .8333333333333333%;
+    padding: 5px 1.666666666666667%;
+    margin: 3px;
+    display: inline-block
+}
+
+.file .options a:last-child {
+    margin-right: 0
+}
+
+.file .options a i {
+    font-size: 15px
+}
+
+.file .cloud {
+    width: 100%;
+    border-top: 1px #f0f0f0 solid;
+    margin-top: 15px;
+    padding-top: 15px;
+    display: none
+}
+
+.file .providers a {
+    color: #0dc420;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px #0dc420 solid;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    display: block
+}
+
+.file .providers a:last-child {
+    margin-bottom: 0
+}
+
+.file .providers a i {
+    font-size: 15px
+}
+
+.file .provider_progress {
+    margin: 15px auto
+}
+
+.file .provider_option {
+    display: none
+}
+
+.file .provider_option a {
+    color: #fff;
+    background-color: #2c2c2c;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 5px 1.666666666666667%;
+    display: inline-block
+}
+
+.file .show {
+    display: block
+}
+
+.margin {
+    margin-bottom: 15px
+}
+
+.frameme {
+    height: 250px;
+}
+
+@media only screen and (max-width:550px) {
+    .frameme {
+        height: 230px
+    }
+
+    #logo {
+        width: 50%
+    }
+
+    form {
+        width: 96%
+    }
+
+    form #query {
+        font-size: 16px
+    }
+
+    #sources {
+        width: 58.33333333333333%
+    }
+
+    #text {
+        width: 96%;
+        margin: 60px auto 0
+    }
+
+    #results {
+        width: 96%
+    }
+}
+
+.top{
+    cursor:pointer;
+    width:50px;
+    height:40px;
+    border-radius:10px;
+    background: #ccc;
+    color:blue;
+    opacity:0.5;
+    line-height:50px;
+    text-align:center;
+    font-size:25px;
+    position:fixed;
+    bottom:15px;
+    right:10px;
+    display:none;
+}
+.top:hover{
+   opacity:0.3;
+}
